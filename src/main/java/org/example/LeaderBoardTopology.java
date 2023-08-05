@@ -26,11 +26,6 @@ public class LeaderBoardTopology {
         KS0.peek((k,v)->{
             logger.info("KS0 ==> KEY : " + k + " VALUE : " + v);
         });
-//        KTable<Long, Player> KT1 = streamsBuilder.table(AppConfigs.playerTopicName,
-//                Materialized.with(AppSerdes.Long(), AppSerdes.Player()));
-//
-//        GlobalKTable<String, Product> GKT2 = streamsBuilder.globalTable(AppConfigs.productTopicName,
-//                Consumed.with(AppSerdes.String(), AppSerdes.Product()));
 
         KGroupedStream<GroupingKey, ScoreEvent> KG3 = KS0.groupBy((player_id , scoreEvent)->{
             return new GroupingKey().withPlayerId(scoreEvent.getPlayerId()).withProductId(scoreEvent.getProductId());
