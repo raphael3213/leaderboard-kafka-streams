@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "javaType": "org.example.types.ScoreEvent",
+  "properties": {
+    "score": {
+      "javaType": "java.lang.Double",
+      "type": "object"
+    },
+    "player_id": {
+      "javaType": "java.lang.Long",
+      "type": "object"
+    },
+    "product_id": {
+      "javaType": "java.lang.Long",
+      "type": "object"
+    }
+  }
+}

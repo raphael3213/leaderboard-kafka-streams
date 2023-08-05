@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "javaType": "org.example.types.Player",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "id": {
+      "javaType": "java.lang.Long",
+      "type": "object"
+    }
+  }
+}

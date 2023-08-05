@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "javaType": "org.example.types.Product",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "id": {
+      "javaType": "java.lang.Long",
+      "type": "object"
+    }
+  }
+}

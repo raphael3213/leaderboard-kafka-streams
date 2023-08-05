@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "javaType": "org.example.types.GroupingKey",
+  "properties": {
+    "player_id": {
+      "javaType": "java.lang.Long",
+      "type": "object"
+    },
+    "product_id": {
+      "javaType": "java.lang.Long",
+      "type": "object"
+    }
+  }
+}
